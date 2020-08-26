@@ -1,0 +1,58 @@
+.main {
+    position: relative;
+    width: 100%;
+    min-height: 1045px;
+    background: url('../img/main_bg.jpg') center (center/cover) no-repeat;
+    &__inner {
+        padding-top: 190px;
+    }
+    &__descr {
+        font-size: 14px;
+        line-height: 150%;
+        color: #FFFFFF;
+        margin: 50px 0;
+    }
+    &__slider {
+        width: 370px;
+        height: 570px;
+        &-item {
+            position: relative;
+            display: block;
+            width: 350px;
+            height: 490px;
+            background-image: url('../img/main_slider/slider_img-below.jpg');
+            cursor: pointer;
+            &:hover {
+                .main__slider-img {
+                    position: absolute;
+                    top: -20px;
+                    left: -20px;
+                }
+            }
+        }
+        &-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: .2s linear all;
+        }
+        &-tabs {
+            @include flex;
+            width: 100%;
+            margin-top: 35px;
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        &-tab {
+            @include flex;
+            width: 25%;
+            cursor: pointer;
+            i {
+                font-size: 30px;
+            }
+        }
+    }
+}

@@ -1,0 +1,389 @@
+@media (max-width: 1200px) {
+    .fixed-panel {
+        height: 800px;
+    }
+    .main {
+        &__inner {
+           padding-top: 384px;
+        }
+        &__slider {
+            display: none;
+        }
+    }
+    .about {
+        &__img {
+            display: none;
+        }
+    }
+    .projects {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__item {
+            width: 50%;
+            &:nth-child(3), &:last-child {
+                margin-top: 30px;
+            }
+        }
+    }
+    .partners {
+        &__inner {
+            margin-top: 70px;
+        }
+        &__item {
+            margin-top: 30px;
+        }
+    }
+    .row {
+        &--mt {
+            margin-top: 0;
+        }
+        &--footer {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+    .footer {
+        &__contact {
+            @include flex;
+            margin-top: 55px;
+            &-more {
+                text-align: right;
+                margin-top: 0;
+            }
+        }
+        &__tels {
+            width: 132px;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .header {
+        top: 60px;
+        &__menu {
+            display: none;
+            &-list {
+                display: none;
+                &--sidebar {
+                    display: flex;
+                    padding-top: 80px;
+                }
+            }
+            &-item {
+                &--sidebar {
+                    margin-top: 35px;
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+        &__tel {
+            width: 100%;
+            margin: 0;
+            margin-right: 15px;
+        }
+        .row {
+            display: none;
+        }
+        .hamburger {
+            display: block;
+        }
+    }
+    .fixed-panel {
+        display: none;
+        &__inner {
+            width: 100%;
+        }
+        &__title {
+            display: none;
+        }
+        &__line {
+            display: none;
+        }
+        &__social {
+            &--header {
+                display: flex;
+            }
+        }
+        &--menu {
+            display: block;
+        }
+    }
+    .main {
+        min-height: 800px;
+        &__inner {
+            padding-top: 252px;
+        }
+    }
+    .about {
+        margin-top: 90px;
+        &__inner {
+            margin-top: 60px;
+        }
+    }
+    .projects {
+        min-height: 675px;
+        margin-top: 90px;
+        &__wrapper {
+            margin-top: 60px;
+        }
+        &__item {
+            margin: 0 auto;
+            width: 45%;
+        }
+    }
+    .rating {
+        margin-top: 90px;
+        &__stars {
+            width: 190px;
+        }
+        &__text {
+            font-size: 29px;
+        }
+    }
+    .partners {
+        margin-top: 90px;
+        &__inner {
+            margin-top: 60px;
+        }
+    }
+    .footer {
+        margin-top: 90px;
+        &__inner {
+            margin-top: 60px;
+        }
+        &__contact {
+            margin-top: 35px;
+        }
+        &__copy {
+            margin-top: 60px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .main {
+        min-height: 600px;
+        &__inner {
+            padding-top: 197px;
+        }
+    }
+    .title {
+        &--main {
+            font-size: 60px;
+        }
+        &--small {
+            text-align: center;
+        }
+    }
+    .about {
+        margin-top: 80px;
+        &__text {
+            text-align: center;
+            margin-bottom: 27px;
+        }
+        &__numbers {
+            @include flex;
+            &-item {
+                &:nth-child(2) {
+                    margin-top: 0;
+                }
+            }
+            &-icon {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+    .projects {
+        margin-top: 80px;
+        padding-left: 0;
+        &__item {
+            width: 100%;
+            margin-top: 30px;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+    .rating {
+        &__text {
+            font-size: 25px;
+        }
+    }
+    .partners {
+        margin-top: 80px;
+    }
+    .footer {
+        margin-top: 80px;
+        &__form {
+            &-textarea {
+                width: 100%;
+                margin-top: 30px;
+            }
+            &-top {
+                flex-direction: column;
+            }
+            &-bottom {
+                flex-direction: column-reverse;
+            }
+            &-label {
+                margin-top: 30px;
+                text-align: center;
+            }
+        }
+        &__inputs {
+            width: 100%;
+        }
+        &__contact {
+            margin-top: 50px;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .header {
+        top: 30px;
+        &__menu-link {
+            font-size: 14px;
+        }
+    }
+    .fixed-panel {
+        &__social {
+            justify-content: space-around;
+            &-link {
+                &--header {
+                    i {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .main {
+        min-height: 500px;
+        &__inner {
+            padding-top: 120px;
+        }
+        &__descr {
+            margin-top: 20px;
+        }
+    }
+    .title {
+        font-size: 32px;
+        &--main {
+            font-size: 36px;
+            text-align: center;
+        }
+        &--small {
+            font-size: 22px;
+        }
+        &--projects {
+            font-size: 20px;
+        }
+    }
+    .button {
+        margin: 0 auto;
+        &--form {
+            width: 100%;
+            font-size: 14px;
+        }
+    }
+    .about {
+        margin-top: 50px;
+        &__inner {
+            margin-top: 50px;
+        }
+        &__numbers {
+            align-items: flex-start;
+            &-item {
+                width: 50%;
+            }
+            &-descr {
+                text-align: center;
+            }
+        }
+    }
+    .projects {
+        margin-top: 50px;
+        &__item {
+            width: 100%;
+        }
+        &__search {
+            width: 60px;
+            height: 60px;
+        }
+    }
+    .rating {
+        min-height: 400px;
+        margin-top: 50px;
+        padding: 50px 0;
+        &__years {
+            @include flex;
+        }
+        &__year {
+            font-size: 20px;
+        }
+        &__stars {
+            margin: 0 auto;
+        }
+        &__text {
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+    .partners {
+        margin-top: 50px;
+        &__inner {
+            margin-top: 30px;
+        }
+    }
+    .footer {
+        margin-top: 50px;
+        &__inner {
+            margin-top: 30px;
+        }
+        &__form {
+            max-width: 400px;
+            margin: 0 auto;
+            &-bottom {
+                margin: 0;
+            }
+            &-input {
+                width: 100%;
+                margin: 0 auto;
+                &:nth-child(2), &:nth-child(3), &:last-child {
+                    margin-top: 20px;
+                }
+            }
+            &-label {
+                width: 100%;
+                margin-top: 15px;
+            }
+        }
+        &__tels {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        &__contact {
+            flex-direction: column;
+            margin-top: 30px;
+            &-more {
+                width: 100%;
+                text-align: center;
+                margin-top: 15px;
+            }
+            &-item {
+                margin-top: 15px;
+            }
+        }
+        &__copy {
+            padding-top: 20px;
+            flex-direction: column;
+            margin-top: 30px;
+            &-developer {
+                margin-top: 15px;
+            }
+        }
+    }
+}

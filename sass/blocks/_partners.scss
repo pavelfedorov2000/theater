@@ -1,0 +1,10 @@
+.partners {
+    min-height: 437px;
+    margin-top: 150px;
+    &__inner {
+        margin-top: 100px;
+    }
+    &__item {
+        @include center;
+    }
+}

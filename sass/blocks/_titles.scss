@@ -1,0 +1,31 @@
+.title {
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    &--main {
+        font-weight: bold;
+        font-size: 64px;
+        text-align: left;
+    }
+    &--small {
+        font-size: 21px;
+        line-height: 29px;
+        text-align: left;
+    }
+    &--projects {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 33px;
+        letter-spacing: 0.05em;
+    }
+    span {
+        color: #D1A954;
+    }
+}

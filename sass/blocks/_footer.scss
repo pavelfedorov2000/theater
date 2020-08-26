@@ -1,0 +1,74 @@
+.footer {
+    min-height: 513px;
+    margin-top: 120px;
+    &__inner {
+        display: flex;
+        margin-top: 100px;
+    }
+    &__contact {
+        &-item {
+            display: block;
+            @include tel;
+            margin-top: 25px;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+        &-more {
+            margin-top: 25px;
+        }
+    }
+    &__inputs {
+        @include flex;
+        flex-wrap: wrap;
+        width: 50%;//390px;
+    }
+    &__form {
+        &-top {
+            @include flex;
+        }
+        &-input {
+            display: flex;
+            align-items: center;
+            width: 45%;//180px;
+            height: 35px;
+            @include input;
+            &::placeholder {
+                @include placeholder;
+            }
+            &:nth-child(3), &:last-child {
+                margin-top: 30px;
+            }
+        }
+        &-textarea {
+            @include input;
+            padding-top: 15px;
+            width: 45%;//310px;
+            height: 100px;
+            &::placeholder {
+                @include placeholder;
+            }
+        }
+        &-bottom {
+            @include flex;
+            margin-top: 40px;
+            padding-top: 18px;
+        }
+        &-label {
+            width: 390px;
+            @include copy;
+        }
+    }
+    &__copy {
+        height: 78px;
+        @include flex;
+        margin-top: 80px;
+        border-top: 1px solid #989898;
+        &-copyright {
+            @include copy;
+        }
+        &-developer {
+            @include copy;
+        }
+    }
+}
